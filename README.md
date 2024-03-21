@@ -28,13 +28,13 @@ To get started with using or contributing to this project, follow these steps:
     int main() {
         char *str = "Hello, world!";
         int length = ft_strlen(str);
-        ft_putnbr(length);
+        ft_putnbr_fd(length, 1);
         return 0;
     }
 ## Usage
-    ```bash
+```bash
     gcc -o main main.c libft.a
-    ```
+```
 ## Contributing
 Contributions to this project are welcome. To contribute, follow these steps:
 
