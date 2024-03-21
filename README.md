@@ -33,7 +33,7 @@ To get started with using or contributing to this project, follow these steps:
     }
 ## Usage
 ```bash
-    gcc -o main main.c libft.a
+$ gcc -o main main.c libft.a
 ```
 ## Contributing
 Contributions to this project are welcome. To contribute, follow these steps:
