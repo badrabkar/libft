@@ -1,14 +1,14 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/07 09:08:03 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/18 18:15:44 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author : badr abkar <doublequintal@gmail.com
+	Description : ft_atoi convert ASCII string to integer
+
+Sign Handling: It then checks for an optional + or - sign. If a - sign is present, the result will be negative.
+
+Digit Parsing: atoi then converts consecutive digits into an integer value. It stops when it encounters the first non-digit character.
+
+Return: Finally, it returns the accumulated integer value.
+*/
+
 #include "libft.h"
 
 int	ft_atoi(const char *str)
@@ -18,15 +18,22 @@ int	ft_atoi(const char *str)
 
 	num = 0;
 	sign = 1;
-	while ((*str >= 9 && *str <= 13) || *str == 32)
-		str++;
-	if (*str == 45)
-		sign *= (-1);
-	if (*str == 45 || *str == 43)
-		str++;
-	if (!ft_isdigit(*str))
-		return (0);
-	while (ft_isdigit(*str))
-		num = num * 10 + (*str++ - 48);
+
+	/*
+	 * Inoring an leading whitespace characters 
+	 * (spaces : ' ', tab : '\t', newline : '\n', Carriage return : '\r', Form feed : '\f', Vertical tab : '\v') in the string.
+	 */ 
+
+	while ((*str >= 9 && *str <= 13) || *str == ' ')  str++;
+
+	// Sign Handling: It then checks for an optional + or - sign. If a - sign is present, the result will be negative.
+
+	if (*str == '-') sign *= (-1);
+	if (*str == '-' || *str == '-') str++;
+
+    // Digit Parsing: atoi then converts consecutive digits into an integer value. It stops when it encounters the first non-digit character.
+
+	while (ft_isdigit(*str)) num = num * 10 + (*str++ - 48);
+	
 	return (num * sign);
 }
