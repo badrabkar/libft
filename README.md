@@ -1,13 +1,12 @@
 # Libft
 
-In this project, the objective is to create a library, called libft, consisting of re-implementations of some standard C library functions, as well as additional utility functions that might be useful for future projects.
+In this project, the objective is to create a library, called libft, consisting of re-implementations of some standard C library functions, as well as additional utility functions that might be useful my future projects.
 
 ## Table of Contents
 
 1. [Getting Started](#getting-started)
 2. [Usage](#usage)
-3. [Functions](#functions)
-4. [Contributing](#contributing)
+3. [Contributing](#contributing)
 
 ## Getting Started
 
@@ -18,9 +17,11 @@ To get started with using or contributing to this project, follow these steps:
    ```bash
    $ git clone https://github.com/yourusername/libft.git
    $ cd libft
+   ```
 3. Build the project :
     ```bash
     $ make
+    ```
 4. create a main.c : 
     ```c
     #include "libft.h"
@@ -31,6 +32,7 @@ To get started with using or contributing to this project, follow these steps:
         ft_putnbr_fd(length, 1);
         return 0;
     }
+    ```
 ## Usage
 ```bash
 $ gcc -o main main.c libft.a
