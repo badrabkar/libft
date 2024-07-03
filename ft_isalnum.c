@@ -1,20 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/14 19:17:54 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/16 18:45:44 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author : badr abkar <doublequintal@gmail.com
+	Description : ft_isalnum checks if the character is alphanumeric
+*/
+
 #include "libft.h"
 
 int	ft_isalnum(int a)
 {
-	if (ft_isdigit(a) || ft_isalpha(a))
-		return (1);
-	else
-		return (0);
+	return (!(!ft_isdigit(a) && !ft_isalpha(a)));
 }
