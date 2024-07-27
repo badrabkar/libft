@@ -1,20 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/14 19:19:06 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/14 19:19:18 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author : badr abkar - nebilx - <doublequintal@gmail.com>
+	Description : ft_isascii checks if the character is ASCII character
+*/
+
 #include "../includes/libft.h"
 
 int	ft_isascii(int a)
 {
-	if (a >= 0 && a <= 127)
-		return (1);
-	else
-		return (0);
+	return (a >= 0 && a <= 127);
 }
