@@ -24,7 +24,7 @@ To get started with using or contributing to this project, follow these steps:
     ```
 4. create a main.c : 
     ```c
-    #include "libft.h"
+    #include "../includes/libft.h"
 
     int main() {
         char *str = "Hello, world!";
