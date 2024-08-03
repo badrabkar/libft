@@ -1,29 +1,24 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 08:02:30 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/18 17:43:23 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author		: badr abkar - nebilx - doublequintal@gmail.com
+	Description : ft_memmove copies len bytes from memory area src to memory area dst 
+*/
+
 #include "../includes/libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	char		*d;
-	const char	*s;
+	unsigned char			*uc_dest;
+	const unsigned char		*uc_src;
 
-	d = (char *)dest;
-	s = (char const *)src;
-	if (d == s)
-		return (d);
-	if (d < s)
-		ft_memcpy(d, s, len);
+	uc_dest = dest;
+	uc_src = src;
+	
+	if (uc_dest == uc_src || !len)
+		return (dest);
+	if (uc_dest < uc_src)
+		ft_memcpy(uc_dest, uc_src, len);
 	else
 		while (len-- > 0)
-			d[len] = s[len];
+			uc_dest[len] = uc_src[len];
 	return (dest);
 }
