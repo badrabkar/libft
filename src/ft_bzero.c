@@ -1,22 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/15 14:45:20 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/18 18:16:35 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author : badr abkar - nebilx - <doublequintal@gmail.com>
+	Description : ft_bzero writes n zeroed bytes to string b
+*/
+
 #include "../includes/libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*string;
-	size_t	i;
-
-	i = 0;
-	string = (char *)s;
-	string = ft_memset(s, '\0', n);
+	s = ft_memset(s, 0, n);
 }
