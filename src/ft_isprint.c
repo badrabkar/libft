@@ -1,20 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/14 19:15:54 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/14 19:17:30 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author : badr abkar - nebilx - <doublequintal@gmail.com>
+	Description : ft_isprint checks if the character is printable
+*/
+
 #include "../includes/libft.h"
 
 int	ft_isprint(int a)
 {
-	if (a >= 32 && a <= 126)
-		return (1);
-	else
-		return (0);
+	return (a >= 32 && a <= 126);
 }

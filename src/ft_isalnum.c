@@ -1,5 +1,5 @@
 /*
-	Author : badr abkar <doublequintal@gmail.com
+	Author : badr abkar - nebilx - <doublequintal@gmail.com>
 	Description : ft_isalnum checks if the character is alphanumeric
 */
 
@@ -7,5 +7,5 @@
 
 int	ft_isalnum(int a)
 {
-	return (!(!ft_isdigit(a) && !ft_isalpha(a)));
+	return (ft_isdigit(a) || ft_isalpha(a));
 }

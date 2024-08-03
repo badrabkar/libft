@@ -1,20 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/14 19:19:38 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/14 19:19:50 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author : badr abkar - nebilx - <doublequintal@gmail.com>
+	Description : ft_isdigit checks if the character is digit
+*/
+
 #include "../includes/libft.h"
 
 int	ft_isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
-		return (0);
+	return (c >= '0' && c <= '9');
 }

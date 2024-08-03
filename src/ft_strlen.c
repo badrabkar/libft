@@ -1,22 +1,16 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 14:26:39 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/16 21:01:09 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author : badr abkar - nebilx - <doublequintal@gmail.com>
+	Description : ft_strlen return the length of a string
+*/
+
 #include "../includes/libft.h"
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	const char *str;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	str = s;
+	while (*str)
+		str++;
+	return (str - s);
 }

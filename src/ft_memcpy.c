@@ -1,31 +1,18 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: babkar <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 11:31:49 by babkar            #+#    #+#             */
-/*   Updated: 2021/11/15 20:39:29 by babkar           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*
+	Author 		: badr abkar - nebilx - <doublequintal@gmail.com>
+	Description : copies n bytes form src to dst, if dst and src overlap the behavior is undefined
+*/
+
 #include "../includes/libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char		*d;
-	const char	*s;
-	size_t		i;
+	unsigned char	*ptr;
 
-	i = 0;
-	d = dst;
-	s = src;
-	if (d == s)
-		return (d);
-	while (i < n)
-	{
-		d[i] = s[i];
-		i++;
-	}
-	return (d);
+	ptr = (unsigned char*)dst;
+	while(n-- > 0)
+		*ptr++ = *(unsigned char*)src++;
+	return dst;
 }
+
+
