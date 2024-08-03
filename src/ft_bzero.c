@@ -1,5 +1,5 @@
 /*
-	Author : badr abkar - nebilx - <doublequintal@gmail.com>
+	Author 		: badr abkar - nebilx - <doublequintal@gmail.com>
 	Description : ft_bzero writes n zeroed bytes to string b
 */
 
