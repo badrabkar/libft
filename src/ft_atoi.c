@@ -1,12 +1,6 @@
 /*
-	Author : badr abkar <doublequintal@gmail.com
+	Author 			: badr abkar - nebilx - doublequintal@gmail.com
 	Description : ft_atoi convert ASCII string to integer
-
-Sign Handling: It then checks for an optional + or - sign. If a - sign is present, the result will be negative.
-
-Digit Parsing: atoi then converts consecutive digits into an integer value. It stops when it encounters the first non-digit character.
-
-Return: Finally, it returns the accumulated integer value.
 */
 
 #include "../includes/libft.h"
