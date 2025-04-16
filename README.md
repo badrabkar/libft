@@ -1,6 +1,6 @@
 # Libft
 
-In this project, the objective is to create a library, called libft, consisting of re-implementations of some standard C library functions, as well as additional utility functions that might be useful my future projects.
+In this project, the objective is to create a library, called libft, consisting of re-implementations of some standard C library functions, as well as additional utility functions that might be useful in my future projects.
 
 ## Table of Contents
 
